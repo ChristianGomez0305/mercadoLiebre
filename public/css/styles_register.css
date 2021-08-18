@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.divisor3 h2{
+    padding: 20px 0 10px;
+    text-align: center;
+}
+.formulario{
+    padding: 20px 0 20px 0;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+    position: relative;
+    top: 230px;
+}
+.formulario form{
+    width: 88%;
+    background-color: white;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+}
+.input-form{
+    display: flex;
+    flex-direction: column;
+
+}
+.input-form button:hover{
+    background-color:brown;
+    color: white;
+}
+.input-form input{
+    height: 25px;
+}
+
+.input-form input[type=checkbox]{
+    width: 12px;
+    height: 12px;
+}
+.input-form input[type=radio]{
+    width: 12px;
+    height: 12px;
+}  
+.input-form label{
+    padding: 0 0 0 10px;
+    font-size: 15px;
+}
+.input-form button{
+    height: 25px;
+    margin: 4px 0;
+    font-size: 15px;
+}
+footer{
+    top: 300px;
+    bottom: 0;
+}
+@media (min-width: 361px){
+    .formulario{
+        top: 250px;
+    }
+    .formulario form{
+        width: 80%;
+    }
+    .input-form label{
+        font-size: 20px;
+    }
+    .input-form button{
+        height: 30px;
+        font-size: 20px;
+    }
+    footer{
+        top: 350px;
+    }
+}
+@media (min-width: 769px){
+    .input-form input{
+        width: 25vw;
+        height: 25px;
+    }
+    .input-form input[type=checkbox]{
+        width: 12px;
+        height: 12px;
+    }
+    .input-form input[type=radio]{
+        width: 12px;
+        height: 12px;
+    }
+    .divisor3 h2{
+        padding: 0;
+    }
+    .formulario{
+        width: 100vw;
+        top: 150px;
+    }
+    .formulario form{
+        top: 150px;
+        width: 55vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .divisor{
+        width: 25vw;
+    }
+    .divisor2{
+        width: 25vw;
+    }
+    .divisor3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+    .input-form button{
+        margin: 15px 15px 0 15px;
+        width: 190px;
+    }
+    footer{
+        top: 150px;
+        bottom: 0;
+    }
+}

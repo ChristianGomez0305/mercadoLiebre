@@ -1,0 +1,347 @@
+*{
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris_oscuro: #666;
+    --Gris_claro: #ebebeb;
+    --Verde: #39b54a;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+    background-color: var(--Gris_claro);
+    margin: 0;
+}
+header{
+    background-color: var(--Amarillo);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+.banner{
+    position: relative;
+    top: 150px;
+}
+main{
+    position: relative;
+    width: 95%;
+    margin: auto;
+    top: 150px;
+}
+.logo-buscador{
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.logogrande{
+    width: 40%;
+}
+.logogrande img{
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.buscador{
+    margin-left: 10px;
+    padding-top: 25px;
+    width: 40%;
+}
+.barra{
+    padding-left: 10px;
+}
+.barra input{
+    width: 100%;
+    height: 3vh;
+    border-radius: 5px;
+    border: solid 1px white;
+}
+.buscador form{
+    display: flex;
+}
+.boton-buscador button{
+    background-color: white;
+    background-color: transparent;
+    border: none;
+}
+.boton-buscador{
+    margin-left: -18px;
+}
+
+.burger-menu{
+    text-align: center;
+    color: white;
+}
+.burger-menu i{
+    background-color: var(--Celeste);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.iconos{
+    text-align: center;
+}
+.iconos i{
+    font-size: 2em;
+    color: var(--Celeste);
+    margin-top: 10px;
+}
+img{
+    width: 100%;
+}
+.mensaje1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.cuerpos{
+    margin-top: 0;
+    padding: 20px 30px 0 30px;
+    font-size: 12px;
+}
+h3{
+    margin-bottom: 0;
+    text-align: center;
+}
+.titulares{
+    font-size: 24px;
+}
+.precios{
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    width: 30%;
+}
+.descuentos{
+    font-size: 16px;
+    color: var(--Verde);
+    margin: 0;
+    display: flex;
+    width: 70%;
+}
+.descripciones{
+    font-size: 16px;
+    padding: 10px 0;
+    display: none;
+    transition: all 1s;
+}
+.cuerposd{
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: left;
+}
+.art1{
+    margin: 10px;
+    box-shadow: none;
+    transition: all 1s;
+}
+.art1:hover .car i{
+    transform: rotate(-90deg);
+}
+.art1:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.art1:hover .descripciones{
+    display: block;
+}
+section{
+    display: block;
+}
+.detalles{
+    border-top: solid 1px #ebebeb;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.imgProd{
+    background-color: white;
+}
+.car{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.car i{
+    border: solid 1px var(--Verde);
+    color: var(--Verde);
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    
+    transition: all 1s;
+}
+.menuOp{
+    display: none;
+}
+.menuOp2{
+    display: none;
+}
+footer{
+    position: relative;
+    top: 150px;
+    background-color: white;
+}
+
+@media (min-width: 361px){
+    .banner{
+        top: 130px;
+    }
+    main{
+        top: 130px;
+    }
+    .cuerpos{
+        text-align: center;
+    }
+    .menuOp{
+        display: flex;
+    }
+    .menuOp2{
+        display: flex;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .art1{
+        width: 45%;
+        margin: 5px 5px 15px 5px;
+    }
+    .productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .logo-buscador{
+        justify-content: space-between;
+    }
+    .logogrande{
+        width: 30%;
+    }
+    .logogrande img{
+        width: 100%;
+    }
+    .barra{
+        width: 100%;
+    }
+    .barra input{
+        height: 4vh;
+        padding-left: 10px;
+    }
+    .buscador{
+        width: 30%;
+    }
+    .boton-buscador button{
+        height: 4vh;
+    }
+    .mensaje1{
+        width: 35%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .mensaje1 .cuerpos{
+        padding: 0;
+    }
+    .menuGen{
+        display: flex;
+        width: 100%;
+        padding: 20px 0;
+    }
+    .menuOp{
+        display: flex;
+        width: 55%;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    .menuOp2{
+        display: flex;
+        width: 45%;
+        justify-content: flex-start;
+    }
+    .menuOp ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: flex-start;
+    }
+    .menuOp ul li{
+        display: flex;
+        padding: 0 5px;
+    }
+    .menuOp2 ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .menuOp2 ul li{
+        display: flex;
+        padding: 0 5px 0 5px;
+    }
+    .menuOp2 ul li a{
+        padding: 0 5px 0 5px;
+    }
+}
+
+@media (min-width: 769px){
+    .art1{
+        width: 24%;
+        margin: 20px 5px 30px 0;
+    }
+    .productos{
+        justify-content: space-between;
+    }
+    .logogrande{
+        width: 18%;
+    }
+    .logogrande img{
+        width: 100%;
+    }
+    .buscador{
+        justify-content: flex-start;
+    }
+    .menuOp2 ul{
+        justify-content: center;
+    }
+    .mensaje1{
+        padding-top: 12px;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 14px;
+    }
+    .buscador{
+        width: 40%;
+    }
+    .barra input{
+        height: 6vh;
+        padding-left: 10px;
+    }
+    .boton-buscador button{
+        height: 6vh;
+    }
+    .footer{
+        padding: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .foo{
+        padding-bottom: 10px;
+        width: 33%;
+    }
+}
